@@ -14,17 +14,6 @@ const switchLabel = document.querySelector('#theme-switch-control')
 
 switchLabel.addEventListener("click", change);
 
-// function changeDark(){
-//   body.classList.add('dark-theme')
-//   switchLabel.removeEventListener("click",changeDark)
-//   switchLabel.addEventListener("click",changeLight);
-// }
-// function changeLight(){
-//   body.classList.remove('dark-theme')
-//   switchLabel.addEventListener("click",changeDark);
-//   switchLabel.removeEventListener("click",changeLight)
-// }
-
 function change(e){
   if(e.target.checked){
     body.classList.add(`${Theme.DARK}`) || body.classList.remove(`${Theme.LIGHT}`);
@@ -48,14 +37,6 @@ if (localStorage.getItem('theme') === Theme.LIGHT){
   switchLabel.checked=false;
 }
 
-
-// const saveLocal = localStorage.getItem('theme');
-// if(saveLocal){
-//   body.classList
-
-// }else{body.classList.add(`${Theme.LIGHT}`)
-
-// }
 
 
 
